@@ -9,7 +9,7 @@ URL:            https://github.com/saagarjha/unxip
 Source0:        https://github.com/saagarjha/unxip/archive/refs/tags/v%{version}.tar.gz
 
 # swift-lang can be obtained from EPEL
-BuildRequires:  swift-lang >= 6.0
+BuildRequires:  swift-lang
 
 BuildRequires:  libstdc++-static
 BuildRequires:  libxml2-devel
@@ -21,6 +21,8 @@ Requires:       libgcc
 Requires:       libstdc++
 Requires:       xz-libs
 Requires:       zlib
+
+Recommends: epel-release
 
 %global debug_package %{nil}
 
@@ -43,8 +45,9 @@ swift build \
    -Xswiftc '-parse-as-library' \
    -Xlinker '--build-id' \
    -Xlinker '-s' \
-   --disable-local-rpath \
    --static-swift-stdlib
+
+#    --disable-local-rpath \
 
 %install
 %{__mkdir_p} %{buildroot}%{_bindir}
