@@ -16,11 +16,11 @@ BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(liblzma)
 BuildRequires:  zlib-devel
 
-Requires:       glibc
-Requires:       libgcc
-Requires:       libstdc++
-Requires:       xz-libs
-Requires:       zlib
+# Requires:       glibc
+# Requires:       libgcc
+# Requires:       libstdc++
+# Requires:       xz-libs
+# Requires:       zlib
 
 Recommends: epel-release
 
