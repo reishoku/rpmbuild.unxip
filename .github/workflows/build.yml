@@ -55,7 +55,7 @@ jobs:
 
       - name: Install build dependencies
         run: |
-          dnf -q --refresh build-dep -y ~/rpmbuild/SPECS/unxip.spec
+          dnf --refresh build-dep -y ~/rpmbuild/SPECS/unxip.spec
 
       - name: Build RPM
         run: |
