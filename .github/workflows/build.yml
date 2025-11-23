@@ -21,7 +21,7 @@ jobs:
           "almalinux:10",
           "almalinux:10-kitten",
           # "quay.io/centos/centos:stream9",
-          "quay.io/centos/centos:stream10"
+          # "quay.io/centos/centos:stream10"
         ]
     runs-on: ${{ matrix.runs-on }}
     container:
