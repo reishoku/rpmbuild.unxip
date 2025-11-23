@@ -43,9 +43,8 @@ swift build \
    -Xswiftc '-gnone' \
    -Xswiftc '-parse-as-library' \
    -Xlinker '-s' \
+   --disable-local-rpath \
    --static-swift-stdlib
-
-#    --disable-local-rpath \
 
 %install
 %{__mkdir_p} %{buildroot}%{_bindir}
