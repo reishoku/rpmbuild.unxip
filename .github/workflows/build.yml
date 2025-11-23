@@ -17,9 +17,9 @@ jobs:
           "ubuntu-24.04-arm"
         ]
         container: [
-          # "almalinux:9",
-          "almalinux:10",
-          "almalinux:10-kitten",
+          "almalinux:9",
+          # "almalinux:10",
+          # "almalinux:10-kitten",
           # "quay.io/centos/centos:stream9",
           # "quay.io/centos/centos:stream10"
         ]
