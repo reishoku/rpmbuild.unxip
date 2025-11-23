@@ -11,7 +11,7 @@ Source0:        https://github.com/saagarjha/unxip/archive/refs/tags/v%{version}
 # swift-lang can be obtained from EPEL
 BuildRequires:  swift-lang
 
-BuildRequires:  libstdc++-static
+# BuildRequires:  libstdc++-static
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(liblzma)
 BuildRequires:  zlib-devel
