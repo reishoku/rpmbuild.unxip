@@ -1,6 +1,6 @@
 
 Name:           unxip
-Version:        3.1
+Version:        3.2
 Release:        1%{?dist}
 Summary:        A fast Xcode unarchiver
 
@@ -57,5 +57,8 @@ swift build \
 
 
 %changelog
-* Sat Mar 15 2025 KOSHIKAWA Kenichi <github.reishoku@reishoku.net>
+* Sun Nov 23 2025 KOSHIKAWA Kenichi <reishoku.misc@pm.me> - 3.2-1
+- Update to 3.2
+
+* Sat Mar 15 2025 KOSHIKAWA Kenichi <reishoku.misc@pm.me> - 3.1-1
 - Initial RPM package
