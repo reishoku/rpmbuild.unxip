@@ -12,8 +12,8 @@ Source0:        https://github.com/saagarjha/unxip/archive/refs/tags/v%{version}
 BuildRequires:  swift-lang
 
 BuildRequires:  libstdc++-static
-BuildRequires:  libxml2-devel
-BuildRequires:  xz-devel
+BuildRequires:  pkgconfig(libxml-2.0)
+BuildRequires:  pkgconfig(liblzma)
 BuildRequires:  zlib-devel
 
 Requires:       glibc
@@ -41,9 +41,7 @@ swift build \
    -j %{?_smp_build_ncpus} \
    -Xswiftc '-O' \
    -Xswiftc '-gnone' \
-   -Xswiftc '-whole-module-optimization' \
    -Xswiftc '-parse-as-library' \
-   -Xlinker '--build-id' \
    -Xlinker '-s' \
    --static-swift-stdlib
 
